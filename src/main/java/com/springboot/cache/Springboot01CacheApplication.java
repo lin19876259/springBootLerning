@@ -40,7 +40,6 @@ import org.springframework.cache.annotation.EnableCaching;
  *
  */
 
-
 /**
  * RabbitMQ
  * 自动配置
