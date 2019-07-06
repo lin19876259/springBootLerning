@@ -14,6 +14,7 @@ import org.springframework.cache.annotation.EnableCaching;
  * 		1.配置数据源信息
  * 		2.使用注解版的MyBatis；
  * 			1）、@MapperScan指定需要扫描的mapper接口所在的包
+ * 多包扫描    @MapperScan({"com.kfit.demo","com.kfit.user"})  
  * 二、快速体验缓存
  * 		步骤：
  * 			1、开启基于注解的缓存 @EnableCaching
