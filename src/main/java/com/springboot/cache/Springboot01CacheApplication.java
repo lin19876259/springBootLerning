@@ -62,6 +62,7 @@ public class Springboot01CacheApplication {
     public static void main(String[] args) {
         SpringApplication.run(Springboot01CacheApplication.class, args);
         System.out.print("代码提交测试！111");
+        System.out.print("代码提交测试aaaa！111");
     }
 
     
