@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 public class BookService {
 
     /*
+     * queues是数组格式的
+     * 
+     * */
     @RabbitListener(queues = "atspringboot.news")
     public void receive(Book book){
         System.out.println("收到消息："+book);
@@ -20,5 +23,5 @@ public class BookService {
         System.out.println(message.getBody());
         System.out.println(message.getMessageProperties());
     }
-    */
+    
 }
