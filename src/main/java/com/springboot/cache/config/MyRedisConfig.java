@@ -37,8 +37,9 @@ public class MyRedisConfig {
         return template;
     }
 
-
-
+    
+    
+    
     //CacheManagerCustomizers可以来定制缓存的一些规则
     @Primary  //将某个缓存管理器作为默认的
     @Bean
@@ -63,5 +64,6 @@ public class MyRedisConfig {
         return cacheManager;
     }
 
+ 
 
 }
