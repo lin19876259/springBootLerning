@@ -25,8 +25,8 @@ public class ElasticsearchApplicationTests{
 	@Autowired
 	JestClient jestClient;
 
-	@Autowired
-	BookRepository bookRepository;
+	//@Autowired
+	//BookRepository bookRepository;
 
 	@Test
 	public void test02(){
@@ -37,10 +37,10 @@ public class ElasticsearchApplicationTests{
 //		bookRepository.index(book);
 
 
-		for (Book book : bookRepository.findByBookNameLike("游")) {
-			System.out.println(book);
-		}
-		;
+		//for (Book book : bookRepository.findByBookNameLike("游")) {
+		//	System.out.println(book);
+		//}
+
 
 	}
 

@@ -5,6 +5,7 @@ import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * 一.缓存搭建
@@ -72,6 +73,7 @@ import org.springframework.cache.annotation.EnableCaching;
 *	1）、编写一个 ElasticsearchRepository
 */
 
+@EnableAsync  //启动异步任务
 @EnableRabbit  //开启基于注解的RabbitMQ模式
 @MapperScan("com.springboot.cache.mapper")
 @EnableCaching

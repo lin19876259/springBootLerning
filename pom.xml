@@ -16,6 +16,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+		<thymeleaf-layout-dialect.version>2.3.0</thymeleaf-layout-dialect.version>
+		<thymeleaf-extras-springsecurity4.version>3.0.2.RELEASE</thymeleaf-extras-springsecurity4.version>
     </properties>
 
     <dependencies>
@@ -69,6 +72,27 @@
 			<groupId>io.searchbox</groupId>
 			<artifactId>jest</artifactId>
 			<version>5.3.3</version>
+		</dependency>
+		  <!--添加spring-boot-starter-mail的依赖，支持邮件开发-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		
+		<!--添加spring-boot-starter-thymeleaf的依赖，支持thymeleaf模板引擎开发-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<!--添加spring-boot-starter-security的依赖，支持security安全框架开发-->
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		
         <dependency>
