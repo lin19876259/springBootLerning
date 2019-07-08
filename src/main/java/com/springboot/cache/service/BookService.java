@@ -13,12 +13,12 @@ public class BookService {
      * queues是数组格式的
      * 
      * */
-    @RabbitListener(queues = "atspringboot.news")
+    //@RabbitListener(queues = "atspringboot.news")
     public void receive(Book book){
         System.out.println("收到消息："+book);
     }
 
-    @RabbitListener(queues = "atspringboot")
+    //@RabbitListener(queues = "atspringboot")
     public void receive02(Message message){
         System.out.println(message.getBody());
         System.out.println(message.getMessageProperties());

@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 /**
+ * 一.缓存搭建
  * 一、搭建基本环境
  * 1、导入数据库文件 创建出department和employee表
  * 2、创建javaBean封装数据
@@ -42,7 +43,7 @@ import org.springframework.cache.annotation.EnableCaching;
  */
 
 /**
- * RabbitMQ
+ *二. RabbitMQ
  * 自动配置
  *  1、RabbitAutoConfiguration
  *  2、有自动配置了连接工厂ConnectionFactory；
@@ -53,6 +54,23 @@ import org.springframework.cache.annotation.EnableCaching;
  *  6、@EnableRabbit +  @RabbitListener 监听消息队列的内容
  *
  */
+
+/**
+* 三.SpringBoot默认支持两种技术来和ES交互；
+* 1、Jest（默认不生效）
+* 	需要导入jest的工具包（io.searchbox.client.JestClient）
+* 2、SpringData ElasticSearch【ES版本有可能不合适】
+* 		版本适配说明：https://github.com/spring-projects/spring-data-elasticsearch
+*		如果版本不适配：2.4.6
+*			1）、升级SpringBoot版本
+*			2）、安装对应版本的ES
+*
+* 		1）、Client 节点信息clusterNodes；clusterName
+* 		2）、ElasticsearchTemplate 操作es
+*		3）、编写一个 ElasticsearchRepository 的子接口来操作ES；
+*	两种用法：https://github.com/spring-projects/spring-data-elasticsearch
+*	1）、编写一个 ElasticsearchRepository
+*/
 
 @EnableRabbit  //开启基于注解的RabbitMQ模式
 @MapperScan("com.springboot.cache.mapper")
